@@ -5,3 +5,8 @@ dist/
 .next/
 *.db
 .DS_Store
+
+# runtime db
+data/
+*.db-wal
+*.db-shm
