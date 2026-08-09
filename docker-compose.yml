@@ -1,0 +1,14 @@
+services:
+  app:
+    build: .
+    container_name: tg-clicker-app
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/app/data
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
