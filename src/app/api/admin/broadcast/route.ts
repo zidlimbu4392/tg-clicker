@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import db from '@/lib/db';
 
-const ADMIN_ID = '934270677'; // Replace with real admin ID in production
+const ADMIN_ID = process.env.ADMIN_ID || '';
 
 export async function POST(req: Request) {
   try {
